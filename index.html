@@ -1,0 +1,91 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 퀴즈 !</title>
+    <link rel="icon" type="image/svg+xml" href="/GBSW.webp" />
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>QUIZ START</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. <span>15초의 시간</span>동안 답을 생각해서 문제를 맞추세요!</div>
+            <div class="info">2. 답변을 선택한 이후로는 재선택이 불가하니 제대로 선택할 것!</div>
+            <div class="info">3. 시간이 다 지난다면 선택이 불가합니다!</div>
+            <div class="info">4. 플레이중에는 게임을 종료가 불가해요. </div>
+            <div class="info">5. 정답에 따라 점수를 받을 수 있어요! 화이팅!</div>
+            <div class="info">HTMl을 잘 모른다면 ? <a
+                    href="https://tropical-purple-25b.notion.site/HTML-79b69e511cad4d45add44e90438681ff"
+                    style="text-decoration: none; color: #007BFF;" target="_blank"><b>여기로 들어가기</b></a>
+            </div>
+            <div class="info" style="color: red;">↑ 위 자료는 고 1 해커톤 준비할 때 오신 선생님의 자료입니다.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">나가기</button>
+            <button class="restart">게임 시작!</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <ndiv class="title">HTML 기본 문제 맞추기</ndiv>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <img src="/GBSW.webp" style="width: 100px;">
+        </div>
+        <div class="complete_text">퀴즈가 끝났어요!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">퀴즈 다시 해보기</button>
+            <button class="quit">그만두기</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
